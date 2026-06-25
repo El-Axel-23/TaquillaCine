@@ -20,7 +20,7 @@ namespace TaquillaCine
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             Boleto boleto = null;
-
+            decimal precioBase = 80;
             string tipo = cmbTipoBoleto.SelectedItem.ToString();
 
             if (tipo == "Estudiante")
@@ -32,12 +32,12 @@ namespace TaquillaCine
 
             else if (tipo == "Adulto Mayor")
             {
-
+                boleto = new BoletoAdultoMayor(80m, "INAPAMadultomayor123");
             }
 
             else if (tipo == "General")
             {
-
+                boleto = new Boleto_General(precioBase);
             }
 
             if (boleto != null)
