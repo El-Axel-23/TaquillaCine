@@ -25,7 +25,12 @@ namespace TaquillaCine
 
             if (tipo == "Estudiante")
             {
-                BoletoEstudiante miBoleto =new BoletoEstudiante(100m);
+                if(textBox1.Text=="")
+                {
+                    MessageBox.Show("Por favor, ingresa tu matricula para continuar.");
+                    return;
+                }
+                BoletoEstudiante miBoleto = new BoletoEstudiante(100m);
                 miBoleto.Matricula = textBox1.Text;
                 boleto = miBoleto;
             }
