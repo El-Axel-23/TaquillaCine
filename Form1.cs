@@ -30,7 +30,7 @@ namespace TaquillaCine
 
             else if (tipo == "Adulto Mayor")
             {
-
+                boleto = new BoletoAdultoMayor(80m, "INAPAMadultomayor123");
             }
 
             else if (tipo == "General")
