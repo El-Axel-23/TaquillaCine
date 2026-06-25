@@ -11,7 +11,7 @@ namespace TaquillaCine
         //Constructor
         public Boleto_General(decimal precioBase):base(precioBase)
         {
-
+        
         }
         //Calcula el precio final pero no tiene descuento asi q lo retorno
         public override decimal CalcularPrecioFinal()
