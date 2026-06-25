@@ -25,7 +25,9 @@ namespace TaquillaCine
 
             if (tipo == "Estudiante")
             {
-
+                BoletoEstudiante miBoleto =new BoletoEstudiante(100m);
+                miBoleto.Matricula = textBox1.Text;
+                boleto = miBoleto;
             }
 
             else if (tipo == "Adulto Mayor")
