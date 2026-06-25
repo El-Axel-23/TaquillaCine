@@ -8,9 +8,10 @@ namespace TaquillaCine
 {
     public class BoletoEstudiante : Boleto
     {
-        public string Matricula;
-        public BoletoEstudiante(decimal precioBase) : base(precioBase)
+        public string Matricula { get; set; }
+        public BoletoEstudiante(decimal precioBase, string matricula) : base(precioBase)
         {
+            Matricula = matricula;
         }
 
         public override decimal CalcularPrecioFinal()

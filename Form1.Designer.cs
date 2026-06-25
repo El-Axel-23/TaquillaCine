@@ -42,20 +42,18 @@
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
-            this.lblTipo.Location = new System.Drawing.Point(36, 106);
-            this.lblTipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTipo.Location = new System.Drawing.Point(27, 86);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(96, 16);
+            this.lblTipo.Size = new System.Drawing.Size(76, 13);
             this.lblTipo.TabIndex = 1;
             this.lblTipo.Text = "Tipo de Boleto";
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(41, 368);
-            this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultado.Location = new System.Drawing.Point(31, 299);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(91, 16);
+            this.lblResultado.Size = new System.Drawing.Size(73, 13);
             this.lblResultado.TabIndex = 2;
             this.lblResultado.Text = "Total a pagar:";
             // 
@@ -66,18 +64,17 @@
             "Estudiante",
             "Adulto Mayor",
             "General"});
-            this.cmbTipoBoleto.Location = new System.Drawing.Point(39, 126);
-            this.cmbTipoBoleto.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbTipoBoleto.Location = new System.Drawing.Point(29, 102);
             this.cmbTipoBoleto.Name = "cmbTipoBoleto";
-            this.cmbTipoBoleto.Size = new System.Drawing.Size(160, 24);
+            this.cmbTipoBoleto.Size = new System.Drawing.Size(121, 21);
             this.cmbTipoBoleto.TabIndex = 3;
+            this.cmbTipoBoleto.SelectedIndexChanged += new System.EventHandler(this.cmbTipoBoleto_SelectedIndexChanged);
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(76, 256);
-            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCalcular.Location = new System.Drawing.Point(57, 208);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(100, 28);
+            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
             this.btnCalcular.TabIndex = 4;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -87,28 +84,31 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(14, 30);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitulo.Location = new System.Drawing.Point(10, 24);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(234, 25);
+            this.lblTitulo.Size = new System.Drawing.Size(190, 20);
             this.lblTitulo.TabIndex = 5;
             this.lblTitulo.Text = "Venta de Boletos de Cine";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 170);
+            this.textBox1.Location = new System.Drawing.Point(81, 138);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 6;
+            this.textBox1.Visible = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 170);
+            this.label1.Location = new System.Drawing.Point(31, 141);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 16);
+            this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Matricula";
+            this.label1.Visible = false;
             // 
             // groupBox1
             // 
@@ -120,19 +120,20 @@
             this.groupBox1.Controls.Add(this.lblTitulo);
             this.groupBox1.Controls.Add(this.lblTipo);
             this.groupBox1.Controls.Add(this.cmbTipoBoleto);
-            this.groupBox1.Location = new System.Drawing.Point(108, 49);
+            this.groupBox1.Location = new System.Drawing.Point(81, 40);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(255, 433);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(218, 352);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 554);
+            this.ClientSize = new System.Drawing.Size(383, 450);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
